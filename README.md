@@ -6,9 +6,9 @@ Refer to [sip_model_gen](https://github.com/seongjunkang123/sip_model_gen) [sip_
 
 | File | Disease | Samples |
 |------|---------|---------|
-| `synthetic_data_asthma.csv` | Asthma | 50 |
-| `synthetic_data_bronchi.csv` | Bronchitis | 50 |
-| `synthetic_data_copd.csv` | COPD | 50 |
+| `synthetic_data_asthma.csv` | Asthma | 500     |
+| `synthetic_data_bronchi.csv` | Bronchitis | 500     |
+| `synthetic_data_copd.csv` | COPD | 500     |
 
 ## Data Format
 
