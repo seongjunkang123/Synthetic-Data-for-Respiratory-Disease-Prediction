@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "name": "validate",
+      "exit_code": 0
+    },
+    {
+      "name": "saved_model_generation",
+      "exit_code": 0
+    },
+    {
+      "name": "source_rebuild",
+      "exit_code": 0
+    },
+    {
+      "name": "reuse_example",
+      "exit_code": 0
+    },
+    {
+      "name": "reuse_example_matches_archived_metrics",
+      "passed": true
+    }
+  ],
+  "execution": "Extracted ZIP into a new temporary directory; ran from outside the original workspace using the recorded Python environment."
+}

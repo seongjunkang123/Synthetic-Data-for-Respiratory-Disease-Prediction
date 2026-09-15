@@ -1,0 +1,23 @@
+[
+  {
+    "disease": "copd",
+    "cid": 91711798,
+    "occurrences": 2,
+    "included": false,
+    "policy": "first"
+  },
+  {
+    "disease": "copd",
+    "cid": 17835,
+    "occurrences": 2,
+    "included": true,
+    "policy": "first"
+  },
+  {
+    "disease": "copd",
+    "cid": 622436,
+    "occurrences": 2,
+    "included": true,
+    "policy": "first"
+  }
+]

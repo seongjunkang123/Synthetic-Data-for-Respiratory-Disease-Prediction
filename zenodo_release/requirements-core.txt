@@ -1,0 +1,5 @@
+# CSV inspection and bootstrap-only example; no generative frameworks.
+numpy==2.5.3
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.8.0

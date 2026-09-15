@@ -1,0 +1,31 @@
+{
+  "source_doi": "10.6084/m9.figshare.23522490.v6",
+  "files": [
+    {
+      "name": "Asthma_peaktable_ver3.csv",
+      "md5": "4e958a9ba2c879f4eb44e4d243618e02",
+      "source_checksum_verified": true
+    },
+    {
+      "name": "Bronchi_peaktable_ver3.csv",
+      "md5": "9e74d546a4e4afb61593d85cea2ec6e6",
+      "source_checksum_verified": true
+    },
+    {
+      "name": "COPD_peaktable_ver3.csv",
+      "md5": "6223c56d1370b633d2034a2d2a4a163b",
+      "source_checksum_verified": true
+    },
+    {
+      "name": "intersection_of_detected_compunds.xlsx",
+      "md5": "4ae12f83dd4a338e4dad294a80774e82",
+      "source_checksum_verified": true
+    }
+  ],
+  "profiles": 121,
+  "features": 78,
+  "duplicate_policy": "first",
+  "numeric_match": true,
+  "rtol": 1e-12,
+  "atol": 1e-12
+}

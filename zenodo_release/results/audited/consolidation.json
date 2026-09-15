@@ -1,0 +1,67 @@
+{
+  "reason": "SDV deterministic copula fit and reset_sampling produce identical samples across seed indices; retain one per fold.",
+  "removed_exact_repeats": [
+    {
+      "fold": 0,
+      "seed_index": 1,
+      "identical_to_seed0": true,
+      "sha256": "36196e1faa39b278f3284e6d3de569f23a4297f433d682872c84bcbd683f22ef"
+    },
+    {
+      "fold": 0,
+      "seed_index": 2,
+      "identical_to_seed0": true,
+      "sha256": "36196e1faa39b278f3284e6d3de569f23a4297f433d682872c84bcbd683f22ef"
+    },
+    {
+      "fold": 1,
+      "seed_index": 1,
+      "identical_to_seed0": true,
+      "sha256": "832576a64496468f12a3ec02fd28d0f8ab44a74d33811ef09b3ef94b0ae4ba08"
+    },
+    {
+      "fold": 1,
+      "seed_index": 2,
+      "identical_to_seed0": true,
+      "sha256": "832576a64496468f12a3ec02fd28d0f8ab44a74d33811ef09b3ef94b0ae4ba08"
+    },
+    {
+      "fold": 2,
+      "seed_index": 1,
+      "identical_to_seed0": true,
+      "sha256": "031bd794d7f15596479e56ac372891f84c9e3b4ad4a9aecfcae6bd87f7e7ac21"
+    },
+    {
+      "fold": 2,
+      "seed_index": 2,
+      "identical_to_seed0": true,
+      "sha256": "031bd794d7f15596479e56ac372891f84c9e3b4ad4a9aecfcae6bd87f7e7ac21"
+    },
+    {
+      "fold": 3,
+      "seed_index": 1,
+      "identical_to_seed0": true,
+      "sha256": "f0d604e2a43068db738847a99740c94ac4a6917ab1a4cc99d8885ad4f398f390"
+    },
+    {
+      "fold": 3,
+      "seed_index": 2,
+      "identical_to_seed0": true,
+      "sha256": "f0d604e2a43068db738847a99740c94ac4a6917ab1a4cc99d8885ad4f398f390"
+    },
+    {
+      "fold": 4,
+      "seed_index": 1,
+      "identical_to_seed0": true,
+      "sha256": "6c4f110922a88f6a5979d0c1a7a6c61450926096a73ce35868dd082039116cfe"
+    },
+    {
+      "fold": 4,
+      "seed_index": 2,
+      "identical_to_seed0": true,
+      "sha256": "6c4f110922a88f6a5979d0c1a7a6c61450926096a73ce35868dd082039116cfe"
+    }
+  ],
+  "bootstrap_sidecars": "Verified by exact regeneration from recorded partitions and seeds.",
+  "sdv_sampling_seed": 73251
+}

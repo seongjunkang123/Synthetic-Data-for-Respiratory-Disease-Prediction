@@ -1,51 +1,42 @@
-# Synthetic Data for Respiratory Disease Prediction
+# Synthetic breath VOC profiles and reproducible respiratory disease modelling
 
-This repository contains synthetically generated Volatile Organic Compound (VOC) profiles for three respiratory diseases, along with the version 22 generator and discriminator models in [`model/`](model/). The data was produced using the trained CTGAN (Conditional Tabular Generative Adversarial Network) from the [`sip_model_gen`](https://github.com/seongjunkang123/sip_model_gen) repository.
-Refer to [sip_model_gen](https://github.com/seongjunkang123/sip_model_gen), [sip_data](https://github.com/seongjunkang123/sip_data) for more information.
+A resource combining **6,000 synthetic profiles**, **78 shared volatile organic
+compounds**, a trained conditional **WGAN-GP**, and a patient-level evaluation benchmark.
+The three classes are **asthma, bronchiectasis and COPD** (2,000 generated profiles each).
+The source cohort contains 121 patients.
 
-## Files
+## Use the current release
 
-| File | Disease | Samples |
-|------|---------|---------|
-| `synthetic_data_asthma.csv` | Asthma | 500     |
-| `synthetic_data_bronchi.csv` | Bronchitis | 500     |
-| `synthetic_data_copd.csv` | COPD | 500     |
+- [Documentation and runnable examples](zenodo_release/README.md)
+- [Data and compound dictionary](zenodo_release/data/)
+- [Portable training and evaluation code](zenodo_release/code/)
+- [Audited benchmark results](zenodo_release/BENCHMARK_SUMMARY.md)
+- [Fold-specific samples and provenance](zenodo_release/results/audited/)
+- [Trained models and preprocessing](zenodo_release/model/)
 
-## Model Files
+Run commands from the release folder:
 
-The [`model/`](model/) directory contains the version 22 model artifacts:
+```bash
+cd zenodo_release
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python code/validate_release.py
+python code/benchmark_example.py
+```
 
-| File | Description |
-|------|-------------|
-| [`gen_v22.keras`](model/gen_v22.keras) | Saved Keras generator model. Takes a 128-dimensional latent vector and a three-class disease condition, and outputs 78 VOC features. |
-| [`dis_v22.keras`](model/dis_v22.keras) | Saved Keras discriminator (critic) model. Takes 78 VOC features and a three-class disease condition, and outputs a scalar score. |
-| [`gen_v22.txt`](model/gen_v22.txt) | Generator architecture summary and training settings, including preprocessing and hyperparameters. |
-| [`dis_v22.txt`](model/dis_v22.txt) | Discriminator architecture summary, including layer shapes and parameter counts. |
-| [`gan_v22.png`](model/gan_v22.png) | Training curves showing generator/discriminator losses and gradient penalty over 2,000 epochs. |
+The release includes real-only, bootstrap, synthetic-only and augmentation
+comparisons on fixed real test folds. It supports methodological reuse and
+controlled sampling; generated profiles are not new patient measurements.
 
-As recorded in [`gen_v22.txt`](model/gen_v22.txt), version 22 uses a dense-only architecture with Wasserstein loss and gradient penalty, `log1p` + MinMaxScaler preprocessing, and 2,000 training epochs with a batch size of 32.
+## Citation and provenance
 
-## Data Format
+Reserved Zenodo DOI: **10.5281/zenodo.21908977** (private draft; publication pending).
+See [citation metadata](zenodo_release/CITATION.cff). Data are CC BY 4.0 and code is MIT.
 
-Each CSV file shares the same schema with 80 columns:
+Source: Kuo et al., [A clinical breathomics dataset](https://doi.org/10.1038/s41597-024-03052-2),
+and [the version 6 source files](https://doi.org/10.6084/m9.figshare.23522490.v6).
 
-- **Patient ID** — Synthetic patient identifier (e.g., `asthma_1`, `bronchi_23`, `copd_50`).
-- **Disease** — Disease label (`asthma`, `bronchi`, or `copd`).
-- **78 VOC feature columns** — Each remaining column is named by its compound identifier and contains a floating-point concentration value representing a VOC measurement.
-
-## How the Data Was Generated
-
-The synthetic data was generated using `generate_synthetic_data.py` in the `sip_model_gen` repository. The generation process works as follows:
-
-1. A MinMaxScaler is fit on the original training data (with optional log transformation) to replicate the same preprocessing used during model training.
-2. The trained generator model is loaded from saved weights.
-3. Samples for each disease condition are produced by feeding random latent vectors (dimension 128) along with a one-hot encoded disease label into the generator. Each CSV in this repository contains 500 samples.
-4. The generator output is inverse-transformed back to the original data scale, and any negative values are clipped to zero since VOC concentrations cannot be negative.
-
-## Related Repositories
-
-For more information about the models and synthetic data generation, see the [`sip_model_gen`](https://github.com/seongjunkang123/sip_model_gen) GitHub repository.
-
-- [`sip_model_gen`](https://github.com/seongjunkang123/sip_model_gen) — CTGAN model training and synthetic data generation.
-- [`sip_model_class`](https://github.com/seongjunkang123/sip_model_class) — Classification model for respiratory disease prediction.
-- [`sip_data`](https://github.com/seongjunkang123/sip_data) — Original VOC datasets.
+Earlier repository files are preserved in [legacy/](legacy/). The correct condition
+is bronchiectasis and the released generator is a conditional WGAN-GP.
+CTGAN is a separate baseline in the benchmark.

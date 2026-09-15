@@ -1,0 +1,247 @@
+{
+    "tables": {
+        "t": {
+            "columns": {
+                "240": {
+                    "sdtype": "numerical"
+                },
+                "244": {
+                    "sdtype": "numerical"
+                },
+                "460": {
+                    "sdtype": "numerical"
+                },
+                "998": {
+                    "sdtype": "numerical"
+                },
+                "1303": {
+                    "sdtype": "numerical"
+                },
+                "2758": {
+                    "sdtype": "numerical"
+                },
+                "2879": {
+                    "sdtype": "numerical"
+                },
+                "3102": {
+                    "sdtype": "numerical"
+                },
+                "4133": {
+                    "sdtype": "numerical"
+                },
+                "7147": {
+                    "sdtype": "numerical"
+                },
+                "7222": {
+                    "sdtype": "numerical"
+                },
+                "7410": {
+                    "sdtype": "numerical"
+                },
+                "7500": {
+                    "sdtype": "numerical"
+                },
+                "7602": {
+                    "sdtype": "numerical"
+                },
+                "7720": {
+                    "sdtype": "numerical"
+                },
+                "7874": {
+                    "sdtype": "numerical"
+                },
+                "8133": {
+                    "sdtype": "numerical"
+                },
+                "8194": {
+                    "sdtype": "numerical"
+                },
+                "8343": {
+                    "sdtype": "numerical"
+                },
+                "8814": {
+                    "sdtype": "numerical"
+                },
+                "9231": {
+                    "sdtype": "numerical"
+                },
+                "9268": {
+                    "sdtype": "numerical"
+                },
+                "10914": {
+                    "sdtype": "numerical"
+                },
+                "11006": {
+                    "sdtype": "numerical"
+                },
+                "11169": {
+                    "sdtype": "numerical"
+                },
+                "11170": {
+                    "sdtype": "numerical"
+                },
+                "11172": {
+                    "sdtype": "numerical"
+                },
+                "11230": {
+                    "sdtype": "numerical"
+                },
+                "12053": {
+                    "sdtype": "numerical"
+                },
+                "12160": {
+                    "sdtype": "numerical"
+                },
+                "12388": {
+                    "sdtype": "numerical"
+                },
+                "14257": {
+                    "sdtype": "numerical"
+                },
+                "15600": {
+                    "sdtype": "numerical"
+                },
+                "16663": {
+                    "sdtype": "numerical"
+                },
+                "16821": {
+                    "sdtype": "numerical"
+                },
+                "17100": {
+                    "sdtype": "numerical"
+                },
+                "17835": {
+                    "sdtype": "numerical"
+                },
+                "19602": {
+                    "sdtype": "numerical"
+                },
+                "21205": {
+                    "sdtype": "numerical"
+                },
+                "21630": {
+                    "sdtype": "numerical"
+                },
+                "22568": {
+                    "sdtype": "numerical"
+                },
+                "23229": {
+                    "sdtype": "numerical"
+                },
+                "23284": {
+                    "sdtype": "numerical"
+                },
+                "29996": {
+                    "sdtype": "numerical"
+                },
+                "31236": {
+                    "sdtype": "numerical"
+                },
+                "31355": {
+                    "sdtype": "numerical"
+                },
+                "41209": {
+                    "sdtype": "numerical"
+                },
+                "73219": {
+                    "sdtype": "numerical"
+                },
+                "75084": {
+                    "sdtype": "numerical"
+                },
+                "85781": {
+                    "sdtype": "numerical"
+                },
+                "90232": {
+                    "sdtype": "numerical"
+                },
+                "103653": {
+                    "sdtype": "numerical"
+                },
+                "136569": {
+                    "sdtype": "numerical"
+                },
+                "137353": {
+                    "sdtype": "numerical"
+                },
+                "141033": {
+                    "sdtype": "numerical"
+                },
+                "146102": {
+                    "sdtype": "numerical"
+                },
+                "160669": {
+                    "sdtype": "numerical"
+                },
+                "520958": {
+                    "sdtype": "numerical"
+                },
+                "537332": {
+                    "sdtype": "numerical"
+                },
+                "551986": {
+                    "sdtype": "numerical"
+                },
+                "557859": {
+                    "sdtype": "numerical"
+                },
+                "558880": {
+                    "sdtype": "numerical"
+                },
+                "567717": {
+                    "sdtype": "numerical"
+                },
+                "574439": {
+                    "sdtype": "numerical"
+                },
+                "575987": {
+                    "sdtype": "numerical"
+                },
+                "622436": {
+                    "sdtype": "numerical"
+                },
+                "637516": {
+                    "sdtype": "numerical"
+                },
+                "5370158": {
+                    "sdtype": "numerical"
+                },
+                "5370325": {
+                    "sdtype": "numerical"
+                },
+                "6041429": {
+                    "sdtype": "numerical"
+                },
+                "6429350": {
+                    "sdtype": "numerical"
+                },
+                "9602988": {
+                    "sdtype": "numerical"
+                },
+                "13544681": {
+                    "sdtype": "numerical"
+                },
+                "13596727": {
+                    "sdtype": "numerical"
+                },
+                "91713521": {
+                    "sdtype": "numerical"
+                },
+                "91726212": {
+                    "sdtype": "numerical"
+                },
+                "91731726": {
+                    "sdtype": "numerical"
+                },
+                "91742720": {
+                    "sdtype": "numerical"
+                },
+                "Disease": {
+                    "sdtype": "categorical"
+                }
+            }
+        }
+    },
+    "relationships": [],
+    "METADATA_SPEC_VERSION": "V1"
+}

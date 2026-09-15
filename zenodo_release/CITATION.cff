@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Cite this release and the original Clinical Breathomics Dataset. The DOI is reserved for an author-held private Zenodo draft until publication."
+type: dataset
+title: "Synthetic breath volatile organic compound profiles for asthma, bronchiectasis and COPD"
+authors:
+  - family-names: Kang
+    given-names: Seongjun
+  - family-names: Garg
+    given-names: Ishaan
+  - family-names: Samdadiya
+    given-names: Parth
+version: "2026-09-15"
+doi: 10.5281/zenodo.21908977
+license: CC-BY-4.0
+repository-code: "https://github.com/seongjunkang123/Synthetic-Data-for-Respiratory-Disease-Prediction"

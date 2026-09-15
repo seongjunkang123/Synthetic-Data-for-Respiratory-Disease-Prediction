@@ -1,0 +1,242 @@
+{
+  "url_public_html": "https://figshare.com/articles/dataset/R_script_for_GC-MS_data_analysis_and_peak_tables_for_asthma_bronchiectasis_and_chronic_obstructive_pulmonary_disease_patients_/23522490/6",
+  "files": [
+    {
+      "id": 41251149,
+      "name": "gcms_analysis.R",
+      "size": 6733,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/41251149",
+      "supplied_md5": "371140e52553746ef29cb34b7bd231d0",
+      "computed_md5": "371140e52553746ef29cb34b7bd231d0",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 42425322,
+      "name": "heatmap.py",
+      "size": 1055,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/42425322",
+      "supplied_md5": "8b9c5168259c573950117b217ad54910",
+      "computed_md5": "8b9c5168259c573950117b217ad54910",
+      "mimetype": "text/x-python"
+    },
+    {
+      "id": 43994391,
+      "name": "COPD_peaktable_ver3.csv",
+      "size": 32343,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/43994391",
+      "supplied_md5": "6223c56d1370b633d2034a2d2a4a163b",
+      "computed_md5": "6223c56d1370b633d2034a2d2a4a163b",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 43994394,
+      "name": "Bronchi_peaktable_ver3.csv",
+      "size": 33372,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/43994394",
+      "supplied_md5": "9e74d546a4e4afb61593d85cea2ec6e6",
+      "computed_md5": "9e74d546a4e4afb61593d85cea2ec6e6",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 43994397,
+      "name": "Asthma_peaktable_ver3.csv",
+      "size": 52377,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/43994397",
+      "supplied_md5": "4e958a9ba2c879f4eb44e4d243618e02",
+      "computed_md5": "4e958a9ba2c879f4eb44e4d243618e02",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 43994400,
+      "name": "CBD_metadata_for_ver3.xlsx",
+      "size": 18119,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/43994400",
+      "supplied_md5": "073970fa0e0449e36e77d0e21d032b48",
+      "computed_md5": "073970fa0e0449e36e77d0e21d032b48",
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "id": 44414426,
+      "name": "intersection_of_detected_compunds.xlsx",
+      "size": 11454,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/44414426",
+      "supplied_md5": "4ae12f83dd4a338e4dad294a80774e82",
+      "computed_md5": "4ae12f83dd4a338e4dad294a80774e82",
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 16367568,
+      "full_name": "Ping-Hung Kuo",
+      "first_name": "Ping-Hung",
+      "last_name": "Kuo",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 16367579,
+      "full_name": "Yue-Chen Jhong",
+      "first_name": "Yue-Chen",
+      "last_name": "Jhong",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 15473537,
+      "full_name": "Tien-Chueh Kuo",
+      "first_name": "Tien-Chueh",
+      "last_name": "Kuo",
+      "is_active": true,
+      "url_name": "Tien-Chueh_Kuo",
+      "orcid_id": "0000-0002-4794-0134"
+    },
+    {
+      "id": 17024062,
+      "full_name": "Yu-Ting Hsu",
+      "first_name": "Yu-Ting",
+      "last_name": "Hsu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 10167478,
+      "full_name": "Ching-hua Kuo",
+      "first_name": "Ching-hua",
+      "last_name": "Kuo",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 11886918,
+      "full_name": "Yufeng Tseng",
+      "first_name": "Yufeng",
+      "last_name": "Tseng",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/R_script_for_GC-MS_data_analysis_and_peak_tables_for_asthma_bronchiectasis_and_chronic_obstructive_pulmonary_disease_patients_/23522490",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">We have performed the GC\u2012MS analysis for detecting breath molecules in 233 patient samples to create the clinical breathomics dataset. Breath molecules can reflect various conditions, including human psychological and pathological states as well as the microbiome. The noninvasive nature of detecting breath molecules has significant advantages in terms of diagnostic and monitoring capabilities. This dataset contains VOCs present in breath of asthma, bronchiectasis and chronic obstructive pulmonary disease. This dataset is an extensive human clinical breath molecule collection for 3 diseases and has been gathered using consistent sample collection protocols. We believe this clinical breathomics dataset will be a valuable resource for researchers and clinicians as they seek to identify and further study potential biomarkers in patient breath.</p>",
+  "funding": "NSTC 111-2320-B-002-043-MY2",
+  "funding_list": [
+    {
+      "id": 23931684,
+      "title": "NSTC 111-2320-B-002-043-MY2",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    },
+    {
+      "id": 23931687,
+      "title": "MOST 110-2320-B-002-038",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    },
+    {
+      "id": 23931690,
+      "title": "MOHW112-FDA-D-114-000611",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    },
+    {
+      "id": 23931693,
+      "title": "The 'Center for Advanced Computing and Imaging in Biomedicine (NTU-112L900703)' from The Featured Areas Research Center Program within the framework of the Higher Education Sprout Project by the Ministry of Education (MOE) in Taiwan",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    },
+    {
+      "id": 23931696,
+      "title": "The \u2018Center of Precision Medicine\u2019 from The Featured Areas Research Center Program within the framework of the Higher Education Sprout Project by the Ministry of Education (MOE) in Taiwan",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 6,
+  "status": "public",
+  "size": 155453,
+  "created_date": "2024-02-06T01:52:01Z",
+  "modified_date": "2024-02-06T01:52:01Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "asthma biomarkers",
+    "Bronchiectasis.",
+    "chronic   obstructive   pulmonary   disease",
+    "volative organic compounds",
+    "breath analysis methods"
+  ],
+  "keywords": [
+    "asthma biomarkers",
+    "Bronchiectasis.",
+    "chronic   obstructive   pulmonary   disease",
+    "volative organic compounds",
+    "breath analysis methods"
+  ],
+  "categories": [
+    {
+      "id": 24469,
+      "title": "Respiratory diseases",
+      "parent_id": 24460,
+      "path": "/24457/24460/24469",
+      "source_id": "320103",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Kuo, Ping-Hung; Jhong, Yue-Chen; Kuo, Tien-Chueh; Hsu, Yu-Ting; Kuo, Ching-hua; Tseng, Yufeng (2023). Peak Tables and the analysis script of Clinical Breathomics Dataset. figshare. Dataset. https://doi.org/10.6084/m9.figshare.23522490.v6",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 23522490,
+  "title": "Peak Tables and the analysis script of Clinical Breathomics Dataset",
+  "doi": "10.6084/m9.figshare.23522490.v6",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/23522490",
+  "published_date": "2024-02-06T01:52:01Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/23522490",
+  "url_public_api": "https://api.figshare.com/v2/articles/23522490",
+  "url_private_html": "https://figshare.com/account/articles/23522490",
+  "timeline": {
+    "posted": "2024-02-06T01:52:01",
+    "firstOnline": "2023-06-15"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}
