@@ -6,6 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from common import RESULTS, FIGURES
+from figure_style import apply_style, save_figure
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
@@ -17,11 +18,10 @@ def main():
     M = pd.read_csv(root/'cv_mia2.csv')
     P = pd.read_csv(root/'cv_predictions2.csv')
     FIGURES.mkdir(exist_ok=True)
-    plt.rcParams.update({'font.size':8, 'axes.labelsize':8, 'axes.titlesize':8,
-                         'xtick.labelsize':7, 'ytick.labelsize':7, 'pdf.fonttype':42})
+    apply_style()
     names = ['logreg','rf','xgb','mlp']
     labels = ['Logistic','Random forest','XGBoost','MLP']
-    purple, ink, blue = '#79568c','#30343b','#357da8'
+    purple, ink, blue = '#7A5195','#263238','#0072B2'
     fig, axes = plt.subplots(2,2,figsize=(7.1,5.2),layout='constrained')
     x=np.arange(4)
     for offset, proto, method, label, color in [(-.19,'TRTR','real','Real training',ink),
@@ -54,7 +54,7 @@ def main():
         ax.hlines(values.mean(),i-.25,i+.25,color=ink)
     ax.set(xticks=[0,1],xticklabels=['Fold-averaged\n(by seed)','Seed-averaged\n(by fold)'],ylabel='TSTR accuracy',xlim=(-.5,1.5),ylim=(.5,1.02),title='Descriptive run variation')
     for ax,l in zip(axes.flat,'abcd'):ax.text(-.16,1.10,l,transform=ax.transAxes,weight='bold',fontsize=11)
-    fig.savefig(FIGURES/'fig6_utility.pdf',bbox_inches='tight');plt.close(fig)
+    save_figure(fig, FIGURES/'fig6_utility.pdf');plt.close(fig)
     methods=['wgangp','ctgan','tvae','copula','bootstrap']
     labels=['WGAN-GP','CTGAN','TVAE','Copula','Bootstrap']
     fig,axes=plt.subplots(1,3,figsize=(7.1,2.8),layout='constrained')
@@ -65,13 +65,13 @@ def main():
             q=R[R.protocol=='TSTR'].groupby(['synth','seed','fold'])[metric].mean().groupby('synth').agg(['mean','std'])
         v=q.loc[methods]
         ax.bar(np.arange(5),v['mean'],.65,yerr=v['std'],capsize=2,
-               color=[purple,'#669bbc',blue,'#d99246','#90969d'])
+               color=[purple,'#56B4E9',blue,'#E69F00','#8C959C'])
         ax.set(xticks=range(5),xticklabels=labels,ylabel=title,ylim=(0,1.1))
         ax.tick_params(axis='x',rotation=38)
         ref=.5 if metric=='mia_auc' else R[R.protocol=='TRTR'].groupby('fold')[metric].mean().mean()
         ax.axhline(ref,c=ink,ls='--',lw=.9)
     for ax,l in zip(axes,'abc'):ax.text(-.18,1.08,l,transform=ax.transAxes,weight='bold',fontsize=11)
-    fig.savefig(FIGURES/'fig7_baselines.pdf',bbox_inches='tight');plt.close(fig)
+    save_figure(fig, FIGURES/'fig7_baselines.pdf');plt.close(fig)
     print('Audited utility figures generated.')
 
 if __name__ == '__main__':

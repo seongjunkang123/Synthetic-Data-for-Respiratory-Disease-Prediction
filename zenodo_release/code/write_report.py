@@ -54,8 +54,8 @@ def main():
 \centering\footnotesize
 \caption{\textbf{Held-out utility of the WGAN-GP synthesis procedure.}
 Mean (standard deviation). TSTR and TRTS summarise fifteen fold/seed
-combinations; TRTR summarises five real-data folds. AUC is macro-averaged
-one-versus-rest. The real-data result is a reference, not an upper bound.}
+combinations, and TRTR summarises five real-data folds. AUC is macro-averaged
+one-versus-rest. Real-data training supplies the reference performance.}
 \label{tab:utility}
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{lcccccc}
@@ -98,8 +98,8 @@ Classifier & Accuracy & AUC & Accuracy & AUC & Accuracy & AUC\\
 Mean with 2.5th--97.5th percentile resampling range in brackets.
 KS and Wasserstein comparisons use equally sized disjoint real halves
 or a real half and synthetic draw. Correlations use class-size bootstrap
-resamples. These ranges describe this training cohort, not equivalence
-or population confidence intervals.}
+resamples. The ranges describe resampling variability within the
+source cohort used to fit the generator.}
 \label{tab:reference}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{llcc}

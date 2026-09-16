@@ -59,7 +59,7 @@ Outputs are archived in results/example/. See **BENCHMARK_SUMMARY.md** for audit
 | results/example/ | Runnable classification and augmentation example outputs |
 | results/sensitivity/ | Duplicate-CID sensitivity checks |
 | results/original_study/ | Earlier saved evaluations, retained for provenance |
-| figures/ | Eight regenerated manuscript figures |
+| figures/ | Eight figures in PDF, SVG and PNG, with a manuscript numbering index |
 | code/ | Source retrieval, harmonisation, generation, training, evaluation and plotting |
 | requirements.txt | Tested full-workflow dependency versions |
 | requirements-core.txt | Lightweight example dependencies |
@@ -125,6 +125,8 @@ at relative and absolute tolerance 1e-12. Outputs go to results/rebuilt/.
 Options --duplicate-policy last and mean support alternative source representations.
 Sensitivity results describe source features and real-data logistic regression,
 not retraining of the archived full-cohort generator.
+
+Figure filenames retain their original numbering. See [figures/FIGURE_INDEX.md](figures/FIGURE_INDEX.md) for their locations in the revised manuscript and appendix.
 
 ## Reproduce validation and figures
 
