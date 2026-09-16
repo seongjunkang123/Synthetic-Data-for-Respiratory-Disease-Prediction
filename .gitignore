@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+.DS_Store
+zenodo_release/results/regenerated/
+zenodo_release/results/rebuilt/
+zenodo_release/results/source/

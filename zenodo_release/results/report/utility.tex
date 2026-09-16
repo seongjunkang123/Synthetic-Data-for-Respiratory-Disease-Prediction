@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{\textbf{Held-out utility of the WGAN-GP synthesis procedure.}
+Mean (standard deviation). TSTR and TRTS summarise fifteen fold/seed
+combinations, and TRTR summarises five real-data folds. AUC is macro-averaged
+one-versus-rest. Real-data training supplies the reference performance.}
+\label{tab:utility}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{2}{c}{TSTR} & \multicolumn{2}{c}{TRTR} & \multicolumn{2}{c}{TRTS}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Classifier & Accuracy & AUC & Accuracy & AUC & Accuracy & AUC\\
+\midrule
+Logistic regression & 0.878 (0.080) & 0.979 (0.018) & 0.959 (0.051) & 0.991 (0.009) & 0.978 (0.014) & 0.999 (0.001)\\
+Random forest & 0.842 (0.104) & 0.987 (0.017) & 0.925 (0.055) & 0.986 (0.011) & 0.915 (0.029) & 0.984 (0.008)\\
+XGBoost & 0.903 (0.104) & 0.993 (0.010) & 0.975 (0.037) & 0.994 (0.012) & 0.905 (0.032) & 0.984 (0.010)\\
+MLP & 0.751 (0.093) & 0.907 (0.041) & 0.802 (0.054) & 0.900 (0.044) & 0.887 (0.052) & 0.973 (0.015)\\
+\bottomrule\end{tabular}\end{table}
